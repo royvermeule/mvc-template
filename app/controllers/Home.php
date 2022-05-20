@@ -1,5 +1,5 @@
 <?php
-class Home extends Controller {
+class Home extends BaseController {
     public function __construct() {
         //$this->homeModel = $this->model('Home');
     }
