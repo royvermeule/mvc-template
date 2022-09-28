@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #413737;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1616;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #413737;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(150, 87, 50);
+}
+
+.titles {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    margin-right: auto;
+    cursor: default;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 30px 10%;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    padding-top: 10px;
+}
+
+.nav-links li a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover {
+    color: grey;
+    border-bottom: 2px solid grey;
+    font-weight: 600;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: burlywood;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+    padding-bottom: 110px;
+}
