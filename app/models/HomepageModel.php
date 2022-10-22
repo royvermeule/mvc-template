@@ -7,4 +7,11 @@ class HomepageModel
     {
         $this->db = $db;
     }
+
+    public function getAbout()
+    {
+        $About = 'SELECT * FROM about';
+        $this->db->query($About);
+        return $this->db->resultSet();
+    }
 }

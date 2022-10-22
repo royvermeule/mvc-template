@@ -2,7 +2,8 @@
 <nav>
     <ul class="nav-links">
         <li>
-            <a href="/Home/index">Home</a>
+            <a href="/HomePage/index">Home</a>
+            <a href="/HomePage/about">About</a>
         </li>
     </ul>
 </nav>
