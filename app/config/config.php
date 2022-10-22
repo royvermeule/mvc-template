@@ -9,6 +9,7 @@ define('DB_NAME', 'mvc-template'); //Add your DB Name
 define('APPROOT', dirname(dirname(__FILE__)));
 
 //URLROOT (Dynamic links)
+//here is where you specify your website url
 define('URLROOT', 'www.mvctemplate.com');
 
 //Sitename
