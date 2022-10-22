@@ -53,7 +53,7 @@ class Home extends BaseController
 
         $data = [
             'html' => $about,
-            "title" => 'about'
+            'title' => 'about'
         ];
 
         //sending $data array to the view.
