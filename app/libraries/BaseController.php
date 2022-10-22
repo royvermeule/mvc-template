@@ -19,17 +19,4 @@ class BaseController
             die("View does not exists.");
         }
     }
-    public function htmlInsert($htmlInsert,  $dbContent = [])
-    {
-        require_once '../app/htmlInserts/' . $htmlInsert . '.php';
-
-        return new $htmlInsert();
-    }
-
-    public function getController($getController)
-    {
-        require_once '../app/controllers/' . $getController . '.php';
-
-        return $getController;
-    }
 }

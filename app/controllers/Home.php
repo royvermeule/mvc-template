@@ -24,7 +24,7 @@ class Home extends BaseController
         ];
 
         //sending $data array to the view.
-        $this->view('homepages/index', $data);
+        $this->view('pages/index', $data);
     }
 
     public function about()
@@ -33,15 +33,13 @@ class Home extends BaseController
         // we can extract the data
         $getAbout = $this->homeModel->getAbout();
 
-        //extracting specific data
-        $rows = '';
+        //extracting data
         foreach ($getAbout as $info)
 
             //here we write the html so we can send it to the index.php file.
             $about = '
             <div class="container-1">
                 <div>
-            
                     <section class="about">
                         <p>' . $info->name . '</p>
                         <p>' . $info->info . '</p>
@@ -57,6 +55,6 @@ class Home extends BaseController
         ];
 
         //sending $data array to the view.
-        $this->view('homepages/index', $data);
+        $this->view('pages/index', $data);
     }
 }
