@@ -4,30 +4,59 @@ class Home extends BaseController
     public function __construct()
     {
         $this->homeModel = $this->model('HomepageModel');
-        $this->homepageHtml = $this->htmlInsert('Homepages');
     }
 
     public function index()
     {
-        $home = $this->homepageHtml->home();
+
+        //here we write the html so we can send it to the index.php file.
+        $home = '
+            <div class="container-1">
+                <div class="home">
+                    <p>MVC - TEMPLATE</p>
+                </div>
+            </div>
+        ';
 
         $data = [
             'html' => $home,
             'title' => 'Home'
         ];
 
-        $this->view('homepages/index', $data);
+        //sending $data array to the view.
+        $this->view('pages/index', $data);
     }
 
     public function about()
     {
-        $about = $this->homepageHtml->about();
+        /*
+            here we put the getAbout function from the HomeModel in a variable so
+            we can extract the data
+        */
+        $getAbout = $this->homeModel->getAbout();
+
+        //extracting data
+        foreach ($getAbout as $info)
+
+            //here we write the html so we can send it to the view.
+            $about = '
+            <div class="container-1">
+                <div>
+                    <section class="about">
+                        <p>' . $info->name . '</p>
+                        <p>' . $info->info . '</p>
+                        <p>Version: ' . $info->version . '</p>
+                    </section>
+                </div>
+            </div>
+        ';
 
         $data = [
             'html' => $about,
-            'title' => 'About'
+            'title' => 'about'
         ];
 
-        $this->view('homepages/index', $data);
+        //sending $data array to the view.
+        $this->view('pages/index', $data);
     }
 }

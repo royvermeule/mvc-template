@@ -3,6 +3,7 @@
     <ul class="nav-links">
         <li>
             <a href="/Home/index">Home</a>
+            <a href="/Home/about">About</a>
         </li>
     </ul>
 </nav>

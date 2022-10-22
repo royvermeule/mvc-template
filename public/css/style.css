@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #1b1717;
+    background-color: #141517;
 }
 
 ::-webkit-scrollbar {
@@ -84,7 +84,7 @@ button {
 }
 
 button:hover {
-    background-color: grey;
+    background-color: rgb(165, 107, 30);
 }
 
 .container-1 {
@@ -92,8 +92,29 @@ button:hover {
     justify-content: center;
     padding: 30px 10%;
     padding-bottom: 110px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .container-1 div {
     color: white;
+}
+
+.about {
+    border: 2px solid rgb(224, 145, 41);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.about p {
+    padding-bottom: 3px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+.home {
+    font-size: 20px;
+    margin-top: 50px;
 }
