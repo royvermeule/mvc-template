@@ -29,14 +29,16 @@ class Home extends BaseController
 
     public function about()
     {
-        //here we put the getAbout function from the HomeModel in a variable so
-        // we can extract the data
+        /*
+            here we put the getAbout function from the HomeModel in a variable so
+            we can extract the data
+        */
         $getAbout = $this->homeModel->getAbout();
 
         //extracting data
         foreach ($getAbout as $info)
 
-            //here we write the html so we can send it to the index.php file.
+            //here we write the html so we can send it to the view.
             $about = '
             <div class="container-1">
                 <div>
