@@ -12,8 +12,7 @@
         <?php require_once APPROOT . '/views/includes/navbar.php' ?>
     </header>
     <main>
-        <!-- here we echo the html comming from the controllers. -->
-        <div><?= $data['html'] ?></div>
+    
     </main>
     <footer>
         <!-- here we import the footer. -->

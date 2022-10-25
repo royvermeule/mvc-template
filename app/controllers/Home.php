@@ -9,22 +9,12 @@ class Home extends BaseController
     public function index()
     {
 
-        //here we write the html so we can send it to the index.php file.
-        $home = '
-            <div class="container-1">
-                <div class="home">
-                    <p>MVC - TEMPLATE</p>
-                </div>
-            </div>
-        ';
-
         $data = [
-            'html' => $home,
             'title' => 'Home'
         ];
 
         //sending $data array to the view.
-        $this->view('pages/index', $data);
+        $this->view('views/index', $data);
     }
 
     public function about()
@@ -35,28 +25,24 @@ class Home extends BaseController
         */
         $getAbout = $this->homeModel->getAbout();
 
-        //extracting data
-        foreach ($getAbout as $info)
+        $rows = '';
 
-            //here we write the html so we can send it to the view.
-            $about = '
-            <div class="container-1">
-                <div>
-                    <section class="about">
-                        <p>' . $info->name . '</p>
-                        <p>' . $info->info . '</p>
-                        <p>Version: ' . $info->version . '</p>
-                    </section>
-                </div>
-            </div>
-        ';
+        foreach ($getAbout as $info) {
+            $rows .= "
+                <tr>
+                    <p>$info->name</p>
+                    <p>$info->info</p>
+                    <p>Version: $info->version</p>
+                </tr>
+            ";
+        }
 
         $data = [
-            'html' => $about,
+            'about' => $rows,
             'title' => 'about'
         ];
 
         //sending $data array to the view.
-        $this->view('pages/index', $data);
+        $this->view('views/about', $data);
     }
 }
