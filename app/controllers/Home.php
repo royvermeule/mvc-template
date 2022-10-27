@@ -26,37 +26,4 @@ class Home extends BaseController
         //sending $data array to the view.
         $this->view('pages/index', $data);
     }
-
-    public function about()
-    {
-        /*
-            here we put the getAbout function from the HomeModel in a variable so
-            we can extract the data
-        */
-        $getAbout = $this->homeModel->getAbout();
-
-        //extracting data
-        foreach ($getAbout as $info)
-
-            //here we write the html so we can send it to the view.
-            $about = '
-            <div class="container-1">
-                <div>
-                    <section class="about">
-                        <p>' . $info->name . '</p>
-                        <p>' . $info->info . '</p>
-                        <p>Version: ' . $info->version . '</p>
-                    </section>
-                </div>
-            </div>
-        ';
-
-        $data = [
-            'html' => $about,
-            'title' => 'about'
-        ];
-
-        //sending $data array to the view.
-        $this->view('pages/index', $data);
-    }
 }
