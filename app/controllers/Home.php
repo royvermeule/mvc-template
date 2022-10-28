@@ -8,22 +8,17 @@ class Home extends BaseController
 
     public function index()
     {
-
-        //here we write the html so we can send it to the index.php file.
-        $home = '
-            <div class="container-1">
-                <div class="home">
-                    <p>MVC - TEMPLATE</p>
-                </div>
-            </div>
-        ';
-
+        /*
+            here we put the getAbout function from the HomeModel in a variable so
+            we can extract the data
+        */
         $data = [
-            'html' => $home,
             'title' => 'Home'
         ];
 
         //sending $data array to the view.
+
         $this->view('pages/index', $data);
+
     }
 }
