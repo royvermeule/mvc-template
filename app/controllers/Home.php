@@ -17,6 +17,8 @@ class Home extends BaseController
         ];
 
         //sending $data array to the view.
-        $this->view('views/index', $data);
+
+        $this->view('pages/index', $data);
+
     }
 }
