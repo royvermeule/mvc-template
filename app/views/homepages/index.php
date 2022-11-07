@@ -12,31 +12,18 @@
         <?php require_once APPROOT . '/views/includes/navbar.php' ?>
     </header>
     <main>
-        <div class="container-center">
-            <div class="container-col">
-                <div class="card2-big">
-                    <h2 class="card-title1">Information</h2>
-                    <p>mvc-template</p>
-                    <p>This is a simple php mvc framework for small projects.</p>
-                    <p>Version: 1.2</p>
-                </div>
+        <div class="flex-ccc">
+            <div class="banner">
+                <img src="/public/styles/img/banner.jpg" alt="">
             </div>
-            <div class="card2-big">
-                <h2 class="card-title1">Get started</h2>
-                <div class="container-row">
-                    <a href="http://localhost/phpmyadmin" class="card-link1">PHP myadmin</a>
-                    <a href="http://localhost:80" class="card-link1">localhost</a>
+            <section>
+                <div class="textarea1">
+                    <h2 class="area-title">Title</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
                 </div>
-                <h2 class="card-title2">How to start?</h2>
-                <p>
-                    First: In the config.php file write your url,
-                    The framework will not work otherwise.
-                </p>
-                <p>
-                    Then: <a href="http://localhost/phpmyadmin" class="card-link2">Make a db</a> give it your prefered name.
-                    then put your the db name in the config.php file.
-                </p>
-            </div>
+            </section>
         </div>
     </main>
     <footer>
