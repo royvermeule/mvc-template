@@ -10,7 +10,7 @@ define('APPROOT', dirname(dirname(__FILE__)));
 
 //URLROOT (Dynamic links)
 //here is where you specify your website url
-define('URLROOT', 'www.mvctemplate.com');
+define('URLROOT', 'http://localhost:3000');
 
 //Sitename
 define('SITENAME', 'mvc-template');

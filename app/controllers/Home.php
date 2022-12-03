@@ -13,7 +13,7 @@ class Home extends BaseController
             we can extract the data
         */
         $data = [
-            'title' => 'Home'
+            'title' => 'mvc-template'
         ];
 
         //sending $data array to the view.
