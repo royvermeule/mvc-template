@@ -7,6 +7,4 @@ class HomepageModel
     {
         $this->db = $db;
     }
-
-    //Here is where we write our db code.
 }

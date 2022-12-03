@@ -14,3 +14,6 @@ define('URLROOT', 'http://localhost:3000');
 
 //Sitename
 define('SITENAME', 'mvc-template');
+
+//timezone
+define('DTZ', new DateTimeZone('Europe/Amsterdam'));
