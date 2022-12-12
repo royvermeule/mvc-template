@@ -1,5 +1,6 @@
 /////////////Colors/////////////
-//use by typing map-get($map:$the name of the map $key: $the value name);
+//use by typing map-get($the name of the map, $the key name);
+// Like this map-get($darkBlue, "1");
 $darkBlue: (
     "1": rgb(0, 0, 80),
     "2": rgb(0, 0, 100),
@@ -112,6 +113,7 @@ $noenGreen: rgb(166, 255, 0);
 $noenBlue: rgb(0, 34, 255);
 
 
+
 ///////Layouts///////
 
 @mixin flex($di: column, $jc: center, $ai: center) {
@@ -127,4 +129,7 @@ $noenBlue: rgb(0, 34, 255);
     border-color: $color;
     border-radius: $radius;
 }
+
+
+
 

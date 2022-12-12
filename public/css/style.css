@@ -1,3 +1,8 @@
 h1 {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 0, 160);
+  border-radius: 5px;
   text-align: center;
+  background-color: rgb(255, 180, 0);
 }/*# sourceMappingURL=style.css.map */

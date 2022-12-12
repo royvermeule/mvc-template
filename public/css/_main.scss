@@ -1,5 +1,9 @@
 @import './varsMixins';
 
 h1 {
+    @include border(5px, 2px, map-get($darkBlue, "5"));
     text-align: center;
+    background-color: map-get($orangeYellow, "6");
 }
+
+
