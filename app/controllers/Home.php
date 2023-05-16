@@ -1,22 +1,28 @@
 <?php
+
+declare(strict_types=1);
+
+namespace Controllers;
+
+use Libraries\BaseController;
+use Models\HomepageModel;
+
 class Home extends BaseController
 {
-    public function __construct()
-    {
-        $this->homeModel = $this->model('HomepageModel');
-    }
+  protected $homeModel;
 
-    public function index()
-    {
+  public function __construct()
+  {
+    $this->homeModel = new HomepageModel();
+  }
 
-        $data = [
-            'title' => 'mvc-template'
-        ];
+  public function index(): void
+  {
+    $data = [
+      'title' => 'mvc-template'
+    ];
 
-        //sending $data array to the view.
-
-        $this->view('homepages/index', $data);
-    }
+    //sending $data array to the view.
+    $this->view('homepages/index', $data);
+  }
 }
-
-

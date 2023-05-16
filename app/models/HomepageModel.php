@@ -1,10 +1,11 @@
 <?php
-class HomepageModel
-{
-    private Database $db;
 
-    public function __construct($db = new Database)
-    {
-        $this->db = $db;
-    }
+declare(strict_types=1);
+
+namespace Models;
+
+use Libraries\BaseModel;
+
+class HomepageModel extends BaseModel
+{
 }
